@@ -120,7 +120,7 @@
 
  .thumbnail  {
  	padding: 15px 10px 20px 10px;
- 	border-radius: 9px;
+     border-radius: 9px;
  }
 
  .thumbnail p{
@@ -285,11 +285,23 @@
   animation: typing 3.5s steps(40, end),
     blink-caret .5s step-end infinite;
 }
-
+.rwd-break {
+    display: none;
+}
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
   }
+  .my-section {
+      padding: 10px;
+      margin-top:100px;
+  }
+  .typewriter {
+    font-size: 15px;
+}
+.rwd-break {
+  display: block;
+}
 }
 /* The typing effect */
 @keyframes typing {
